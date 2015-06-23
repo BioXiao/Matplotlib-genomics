@@ -1,6 +1,11 @@
 #This is a useful stacked barPlot example using matplotlib
-plt.style.use('ggplot')
+%matplotlib inline
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
 
+plt.style.use('ggplot')
+data = pd.read_csv("AS_significant_Events_all_summary_for_plotting.csv")
 x= range(7)
 wid = 0.5
 as_type = ['SE','MXE','A5SS','A3SS','RT']
